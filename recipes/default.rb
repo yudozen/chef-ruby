@@ -6,6 +6,12 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+directory "/home/vagrant/tmp" do
+        owner "vagrant"
+        group "vagrant"
+        mode 00755
+        action :create
+end
 
 remote_file "/home/vagrant/tmp/ruby-1.9.3-p362.tar.gz" do
 	source "http://core.ring.gr.jp/archives/lang/ruby/1.9/ruby-1.9.3-p362.tar.gz"
